@@ -31,13 +31,18 @@ export default function Hero() {
                 <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">
                   Para más información pónte en contacto con nosotros a través de WhatsApp o una llamada telefónica
                 </p>
-                <div className="flex flex-col sm:flex-row justify-center" data-aos="fade-up" data-aos-delay="200">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-center" data-aos="fade-up"
+                     data-aos-delay="200">
                   <a href="https://wa.me/+17272386347"
-                     className="btn text-white bg-green-500 hover:bg-green-700 w-full sm:w-auto sm:flex-1 mb-4 sm:mb-0 mr-0 sm:mr-4 text-center">WhatsApp</a>
+                     className="btn text-white bg-green-500 hover:bg-green-700 w-full text-center">WhatsApp</a>
                   <a href="tel:+17272386347"
-                     className="btn text-white bg-blue-500 hover:bg-blue-700 w-full sm:w-auto sm:flex-1 text-center">LLámanos</a>
+                     className="btn text-white bg-blue-500 hover:bg-blue-700 w-full text-center">LLámanos</a>
+                  <a href="https://calendly.com/iamrenielgonzalez"
+                     className="btn text-white bg-orange-500 hover:bg-orange-700 w-full text-center">Reserva una
+                    cita</a>
                 </div>
               </div>
+
 
             </div>
 
