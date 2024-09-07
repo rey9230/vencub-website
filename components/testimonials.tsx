@@ -91,7 +91,7 @@ export default function Testimonials() {
                   Estoy muy satisfecho con el resultado.
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="text-gray-200 not-italic">Laura García</cite> - <a
+                  <cite className="text-gray-200 not-italic">Emmauel Reyes</cite> - <a
                     className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Traducción
                   de Documentos</a>
                 </div>
@@ -101,7 +101,7 @@ export default function Testimonials() {
               <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="600">
                 <div>
                   <div className="relative inline-flex flex-col mb-4">
-                    <Image className="rounded-full" src={TestimonialImage01} width={48} height={48}
+                    <Image className="rounded-full" src={TestimonialImage02} width={48} height={48}
                            alt="Testimonial 04"/>
                     <svg className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-purple-600"
                          viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
