@@ -28,15 +28,17 @@ export default function Hero() {
               <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Tenemos la solución a
                 todos tus problemas, la familia VenCub te espera, no dejes de contactarnos.</p>
               <div className="max-w-3xl mx-auto">
-                <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">Para más información pónte en contacto con nosotros a través de WhatsApp o una llamada telefónica</p>
-                <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
+                <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">
+                  Para más información pónte en contacto con nosotros a través de WhatsApp o una llamada telefónica
+                </p>
+                <div className="flex flex-col sm:flex-row justify-center" data-aos="fade-up" data-aos-delay="200">
                   <a href="https://wa.me/+17272386347"
-                     className="btn text-white bg-green-500 hover:bg-green-700 w-full mb-4 sm:w-auto sm:mb-0 mr-4">WhatsApp</a>
+                     className="btn text-white bg-green-500 hover:bg-green-700 w-full sm:w-auto sm:flex-1 mb-4 sm:mb-0 mr-0 sm:mr-4 text-center">WhatsApp</a>
                   <a href="tel:+17272386347"
-                     className="btn text-white bg-blue-500 hover:bg-blue-700 w-full sm:w-auto">LLámanos</a>
+                     className="btn text-white bg-blue-500 hover:bg-blue-700 w-full sm:w-auto sm:flex-1 text-center">LLámanos</a>
                 </div>
-
               </div>
+
             </div>
 
             <ModalVideo
