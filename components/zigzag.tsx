@@ -30,14 +30,14 @@ export default function Zigzag() {
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                   <div className="md:pr-4 lg:pr-12 xl:pr-16">
                     <div className="font-architects-daughter text-xl text-purple-600 mb-2">Preparación de Taxes</div>
-                    <h3 className="h3 mb-3">Declaración de impuestos sin complicaciones</h3>
-                    <p className="text-xl text-gray-400 mb-4">La preparación de impuestos que ofrecen es simplemente impecable. Desde el inicio hasta el final, su equipo se encarga de todos los detalles y me aseguró que no me perdiera ninguna deducción. ¡Mi declaración nunca había sido tan precisa y fácil de manejar!</p>
+                    <h3 className="h3 mb-3">Simplificamos la declaración de tus impuestos</h3>
+                    <p className="text-xl text-gray-400 mb-4">En nuestra compañía, nos encargamos de todo el proceso de declaración de impuestos, garantizando que no te pierdas ninguna deducción y maximizando tus beneficios fiscales. Con nosotros, puedes estar seguro de que tus impuestos estarán en las mejores manos.</p>
                     <ul className="text-lg text-gray-400 -mb-2">
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Atención personalizada en cada etapa</span>
+                        <span>Asesoría personalizada en cada etapa</span>
                       </li>
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@ export default function Zigzag() {
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Precisión y facilidad de manejo</span>
+                        <span>Proceso fácil y preciso</span>
                       </li>
                     </ul>
                   </div>
@@ -66,14 +66,14 @@ export default function Zigzag() {
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                   <div className="md:pl-4 lg:pl-12 xl:pl-16">
                     <div className="font-architects-daughter text-xl text-purple-600 mb-2">Reparación de Créditos</div>
-                    <h3 className="h3 mb-3">Mejora tu puntaje de crédito</h3>
-                    <p className="text-xl text-gray-400 mb-4">Mi puntaje de crédito mejoró significativamente gracias a su servicio. Eliminé errores en mi informe de crédito y pude negociar con mis acreedores de manera efectiva. Recomiendo encarecidamente este servicio a quienes buscan mejorar su salud financiera.</p>
+                    <h3 className="h3 mb-3">Recupera tu puntaje de crédito con nosotros</h3>
+                    <p className="text-xl text-gray-400 mb-4">Nos especializamos en mejorar tu puntaje de crédito corrigiendo errores en tu informe y negociando con acreedores. Nuestro servicio de reparación de crédito está diseñado para ayudarte a alcanzar una mejor salud financiera, asegurando que tu historial crediticio esté en su mejor forma.</p>
                     <ul className="text-lg text-gray-400 -mb-2">
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Corrección de errores en el informe</span>
+                        <span>Corrección de errores crediticios</span>
                       </li>
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +85,7 @@ export default function Zigzag() {
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Mejora de la salud financiera</span>
+                        <span>Mejora continua de tu crédito</span>
                       </li>
                     </ul>
                   </div>
@@ -96,32 +96,32 @@ export default function Zigzag() {
               <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
                 {/* Image */}
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                  <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Asesoramiento Financiero" />
+                  <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Servicios de Notaría" />
                 </div>
                 {/* Content */}
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                   <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">Asesoramiento Financiero</div>
-                    <h3 className="h3 mb-3">Planificación y estrategias financieras</h3>
-                    <p className="text-xl text-gray-400 mb-4">El asesoramiento financiero ofrecido me ha permitido tomar decisiones informadas sobre mis inversiones y planificar mi futuro financiero con confianza. La claridad y los consejos prácticos recibidos han sido invaluables.</p>
+                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">Servicios de Notaría</div>
+                    <h3 className="h3 mb-3">Trámites notariales sin complicaciones</h3>
+                    <p className="text-xl text-gray-400 mb-4">Nuestros servicios de notaría cubren todas tus necesidades legales con rapidez y profesionalismo. Ya sea que necesites autenticar documentos, firmar contratos o realizar cualquier otro trámite notarial, te ofrecemos un servicio confiable y eficiente, para que puedas enfocarte en lo que realmente importa.</p>
                     <ul className="text-lg text-gray-400 -mb-2">
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Estrategias personalizadas</span>
+                        <span>Autenticación rápida de documentos</span>
                       </li>
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Decisiones informadas</span>
+                        <span>Trámites notariales a domicilio</span>
                       </li>
                       <li className="flex items-center">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Confianza en el futuro financiero</span>
+                        <span>Servicio confiable y profesional</span>
                       </li>
                     </ul>
                   </div>
@@ -129,6 +129,7 @@ export default function Zigzag() {
               </div>
 
             </div>
+
           </div>
         </div>
       </section>
