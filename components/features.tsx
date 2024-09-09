@@ -82,9 +82,8 @@ export default function Features() {
                       d="M22 40h20v-4H22v4zm0-8h20v-4H22v4zm0-8h20v-4H22v4zm2-8h16V12H24v4z" strokeLinecap="square"
                       strokeWidth="2"/>
               </svg>
-              <h4 className="h4 mb-2">Gestión de reclamos al seguro</h4>
-              <p className="text-lg text-gray-400 text-center">Asistimos en la presentación y seguimiento de reclamos al
-                seguro, asegurando que reciba la compensación adecuada de manera oportuna.</p>
+              <h4 className="h4 mb-2">Trademarks y patentes.</h4>
+              <p className="text-lg text-gray-400 text-center">Asistimos en la preparación y presentación de solicitudes de registro de marcas. Esto incluye la preparación de documentos necesarios y el seguimiento del proceso de registro hasta obtener la aprobación.</p>
             </div>
 
             {/* 6th item */}
