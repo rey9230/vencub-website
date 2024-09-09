@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Open PRO',
-  description: 'Page description',
+  title: 'Inicio - VenCub',
+  description: 'Esta es la página de inicio de la companñía.',
 }
 
 import Hero from '@/components/hero'

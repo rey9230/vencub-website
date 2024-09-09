@@ -37,7 +37,7 @@ export default function Hero() {
                      className="btn text-white bg-green-500 hover:bg-green-700 w-full text-center">WhatsApp</a>
                   <a href="tel:+17272386347"
                      className="btn text-white bg-blue-500 hover:bg-blue-700 w-full text-center">LLámanos</a>
-                  <a href="https://calendly.com/iamrenielgonzalez"
+                  <a href="https://calendly.com/info-vencub"
                      className="btn text-white bg-orange-500 hover:bg-orange-700 w-full text-center">Reserva una
                     cita</a>
                 </div>
