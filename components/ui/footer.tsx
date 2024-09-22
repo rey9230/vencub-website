@@ -1,8 +1,13 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
 import Image from "next/image";
+import {useTranslation} from "react-i18next";
 
 export default function Footer() {
+
+  const { t } = useTranslation();
   return (
       <footer>
         <div className="py-12 md:py-16">
@@ -35,70 +40,66 @@ export default function Footer() {
                   {/*</Link>*/}
                 </div>
                 <div className="text-gray-400">
-                  Proporcionamos soluciones creativas para negocios modernos. Descubre nuestros servicios y contáctanos
-                  para soluciones personalizadas a tus necesidades.
+                  {t('under_logo')}
                 </div>
               </div>
 
               {/* 2do, 3er, y 4to bloque */}
               <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
 
-                {/* 2do bloque */}
-                <div className="text-sm">
-                  <h6 className="text-gray-200 font-medium mb-1">Productos</h6>
-                  <ul>
-                    <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Web Studio</Link>
-                    </li>
-                    <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">DynamicBox Flex</Link>
-                    </li>
-                    <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Programming Forms</Link>
-                    </li>
-                  </ul>
-                </div>
+                {/*/!* 2do bloque *!/*/}
+                {/*<div className="text-sm">*/}
+                {/*  <h6 className="text-gray-200 font-medium mb-1">Productos</h6>*/}
+                {/*  <ul>*/}
+                {/*    <li className="mb-1">*/}
+                {/*      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Web Studio</Link>*/}
+                {/*    </li>*/}
+                {/*    <li className="mb-1">*/}
+                {/*      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">DynamicBox Flex</Link>*/}
+                {/*    </li>*/}
+                {/*    <li className="mb-1">*/}
+                {/*      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Programming Forms</Link>*/}
+                {/*    </li>*/}
+                {/*  </ul>*/}
+                {/*</div>*/}
 
-                {/* 3er bloque */}
-                <div className="text-sm">
-                  <h6 className="text-gray-200 font-medium mb-1">Recursos</h6>
-                  <ul>
-                    <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Documentación</Link>
-                    </li>
-                    <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Referencias API</Link>
-                    </li>
-                    <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Centro de Soporte</Link>
-                    </li>
-                    <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Guías Visuales</Link>
-                    </li>
-                    <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Tutoriales</Link>
-                    </li>
-                  </ul>
-                </div>
+                {/*/!* 3er bloque *!/*/}
+                {/*<div className="text-sm">*/}
+                {/*  <h6 className="text-gray-200 font-medium mb-1">Recursos</h6>*/}
+                {/*  <ul>*/}
+                {/*    <li className="mb-1">*/}
+                {/*      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Documentación</Link>*/}
+                {/*    </li>*/}
+                {/*    <li className="mb-1">*/}
+                {/*      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Referencias API</Link>*/}
+                {/*    </li>*/}
+                {/*    <li className="mb-1">*/}
+                {/*      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Centro de Soporte</Link>*/}
+                {/*    </li>*/}
+                {/*    <li className="mb-1">*/}
+                {/*      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Guías Visuales</Link>*/}
+                {/*    </li>*/}
+                {/*    <li className="mb-1">*/}
+                {/*      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Tutoriales</Link>*/}
+                {/*    </li>*/}
+                {/*  </ul>*/}
+                {/*</div>*/}
 
                 {/* 4to bloque */}
                 <div className="text-sm">
-                  <h6 className="text-gray-200 font-medium mb-1">Empresa</h6>
+                  <h6 className="text-gray-200 font-medium mb-1">{t('footer_1')}</h6>
                   <ul>
                     <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Sobre Nosotros</Link>
+                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">{t('footer_2')}</Link>
                     </li>
                     <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Carreras</Link>
+                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">{t('footer_3')}</Link>
                     </li>
                     <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Política de Privacidad</Link>
+                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">{t('footer_4')}</Link>
                     </li>
                     <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Términos de Servicio</Link>
-                    </li>
-                    <li className="mb-1">
-                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Contáctanos</Link>
+                      <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">{t('footer_5')}</Link>
                     </li>
                   </ul>
                 </div>
@@ -137,7 +138,7 @@ export default function Footer() {
 
               {/* Texto inferior */}
               <div className="text-sm text-gray-400">
-                &copy; 2024 <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">VenCub</Link>. Todos los derechos reservados.
+                &copy; 2024 <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">VenCub</Link>. {t('all_lefts')}
               </div>
             </div>
 

@@ -1,10 +1,13 @@
+'use client'
 import Image from 'next/image'
 
 import TestimonialImage01 from '@/public/images/testimonial-01.jpg'
 import TestimonialImage02 from '@/public/images/testimonial-02.jpg'
 import TestimonialImage03 from '@/public/images/testimonial-03.jpg'
+import {useTranslation} from "react-i18next";
 
 export default function Testimonials() {
+  const { t } = useTranslation();
   return (
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -12,11 +15,8 @@ export default function Testimonials() {
 
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-              <h2 className="h2 mb-4">Opiniones de Nuestros Clientes</h2>
-              <p className="text-xl text-gray-400">
-                Aquí tienes algunas de las evaluaciones que hemos recibido por parte de nuestros clientes satisfechos en
-                diferentes servicios.
-              </p>
+              <h2 className="h2 mb-4">{t('celtos_1')}</h2>
+              <p className="text-xl text-gray-400">{t('celtos_2')}</p>
             </div>
 
             {/* Testimonials */}
@@ -36,14 +36,11 @@ export default function Testimonials() {
                   </div>
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
-                  — La preparación de impuestos que ofrecen es simplemente impecable. Desde el inicio hasta el final, su
-                  equipo se encarga de todos los detalles y me aseguró que no me perdiera ninguna deducción. ¡Mi
-                  declaración nunca había sido tan precisa y fácil de manejar!
+                  {t('opinion1_1')}
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="text-gray-200 not-italic">Ana López</cite> - <a
-                    className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Preparación
-                  de Taxes</a>
+                  <cite className="text-gray-200 not-italic"> {t('opinion1_2')}</cite> - <a
+                    className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0"> {t('opinion1_3')}</a>
                 </div>
               </div>
 
@@ -86,14 +83,11 @@ export default function Testimonials() {
                   </div>
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
-                  — El servicio de traducción fue excepcional. Tradujeron mis documentos legales con gran precisión y en
-                  tiempo récord. La confidencialidad y el respeto por el contexto de los documentos fueron notables.
-                  Estoy muy satisfecho con el resultado.
+                  {t('opinion2_1')}
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="text-gray-200 not-italic">Emmauel Reyes</cite> - <a
-                    className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Traducción
-                  de Documentos</a>
+                  <cite className="text-gray-200 not-italic">{t('opinion2_2')}</cite> - <a
+                    className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">{t('opinion2_3')}</a>
                 </div>
               </div>
 
@@ -111,14 +105,11 @@ export default function Testimonials() {
                   </div>
                 </div>
                 <blockquote className="text-lg text-gray-400 grow">
-                  — Los servicios legales ofrecidos fueron más allá de mis expectativas. Me proporcionaron asesoría
-                  clara y efectiva, y el proceso fue rápido y sin complicaciones. Definitivamente recomendaría sus
-                  servicios a otros.
+                  {t('opinion3_1')}
                 </blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="text-gray-200 not-italic">Pedro Ruiz</cite> - <a
-                    className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Servicios
-                  Legales</a>
+                  <cite className="text-gray-200 not-italic">{t('opinion3_2')}</cite> - <a
+                    className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">{t('opinion3_3')}</a>
                 </div>
               </div>
 

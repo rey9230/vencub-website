@@ -1,4 +1,13 @@
+'use client'
+
+
+import { useTranslation } from 'react-i18next';
+
 export default function Features() {
+
+  const { t } = useTranslation();
+
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -6,14 +15,14 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Estamos aquí para ayudarte con todos tus trámites</h2>
-            <p className="text-xl text-gray-400">Nuestros expertos legales te guiarán de la mano hasta la resolución de tu problema.</p>
+            <h2 className="h2 mb-4">{t('subheader_1')}</h2>
+            <p className="text-xl text-gray-400">{t('subheader_2')}</p>
           </div>
 
           {/* Items */}
           <div
               className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none"
-              data-aos-id-blocks>
+              data-aos-id-blocks="">
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up"
@@ -24,9 +33,8 @@ export default function Features() {
                       d="M20 32h24v2H20v-2zm8-4h8v2h-8v-2zm-6-4h20v2H22v-2zm8-4h4v2h-4v-2z" strokeLinecap="square"
                       strokeWidth="2" fill="none" fillRule="evenodd"/>
               </svg>
-              <h4 className="h4 mb-2">Preparación de taxes</h4>
-              <p className="text-lg text-gray-400 text-center">Preparamos sus taxes y enmiendas, asegurándonos de que
-                cumpla con todas las regulaciones fiscales y maximice sus beneficios fiscales.</p>
+              <h4 className="h4 mb-2">{t('title_1')}</h4>
+              <p className="text-lg text-gray-400 text-center">{t('feature_1')}</p>
             </div>
 
             {/* 2nd item */}
@@ -37,9 +45,8 @@ export default function Features() {
                 <path className="stroke-current text-purple-100" d="M32 12v40m-20-20h40" strokeLinecap="square"
                       strokeWidth="2"/>
               </svg>
-              <h4 className="h4 mb-2">Reparación de créditos</h4>
-              <p className="text-lg text-gray-400 text-center">Ayudamos a mejorar su puntaje crediticio mediante la
-                eliminación de errores en su reporte de crédito y la negociación con acreedores.</p>
+              <h4 className="h4 mb-2">{t('title_2')}</h4>
+              <p className="text-lg text-gray-400 text-center">{t('feature_2')}</p>
             </div>
 
             {/* 3rd item */}
@@ -52,9 +59,8 @@ export default function Features() {
                   <path className="stroke-current text-purple-300" d="M4 4h14v14H4z"/>
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Traducción de documentos</h4>
-              <p className="text-lg text-gray-400 text-center">Ofrecemos servicios de traducción profesional para
-                documentos legales, educativos y personales, garantizando precisión y confidencialidad.</p>
+              <h4 className="h4 mb-2">{t('title_3')}</h4>
+              <p className="text-lg text-gray-400 text-center">{t('feature_3')}</p>
             </div>
 
             {/* 4th item */}
@@ -68,9 +74,8 @@ export default function Features() {
                         transform="translate(6 6)"/>
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Servicios de contador</h4>
-              <p className="text-lg text-gray-400 text-center">Proveemos servicios completos de contabilidad, incluyendo
-                la gestión de libros, auditorías y planificación financiera para individuos y empresas.</p>
+              <h4 className="h4 mb-2">{t('title_4')}</h4>
+              <p className="text-lg text-gray-400 text-center">{t('feature_4')}</p>
             </div>
 
             {/* 5th item */}
@@ -82,9 +87,10 @@ export default function Features() {
                       d="M22 40h20v-4H22v4zm0-8h20v-4H22v4zm0-8h20v-4H22v4zm2-8h16V12H24v4z" strokeLinecap="square"
                       strokeWidth="2"/>
               </svg>
-              <h4 className="h4 mb-2">Trademarks y patentes.</h4>
-              <p className="text-lg text-gray-400 text-center">Asistimos en la preparación y presentación de solicitudes de registro de marcas. Esto incluye la preparación de documentos necesarios y el seguimiento del proceso de registro hasta obtener la aprobación.</p>
-            </div>
+              <h4 className="h4 mb-2">{t('title_5')}</h4>
+              <p className="text-lg text-gray-400 text-center">{t('feature_5')}</p>
+
+              </div>
 
             {/* 6th item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500"
@@ -96,8 +102,8 @@ export default function Features() {
                   <path className="stroke-current text-purple-300" d="M4 10h16l2 8H2z" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Residencia permanente y permiso de trabajo</h4>
-              <p className="text-lg text-gray-400 text-center">Facilitamos el proceso para la obtención de residencia permanente y permisos de trabajo, guiándolo a través de los requisitos legales y administrativos.</p>
+              <h4 className="h4 mb-2">{t('title_6')}</h4>
+              <p className="text-lg text-gray-400 text-center">{t('feature_6')}</p>
             </div>
 
           </div>

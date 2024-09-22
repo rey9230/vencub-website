@@ -1,7 +1,15 @@
+'use client'
+
+
 import VideoThumb from '@/public/images/hero-image-01.jpg'
 import ModalVideo from '@/components/modal-video'
+import {useTranslation} from "react-i18next";
+
 
 export default function Hero() {
+
+  const { t } = useTranslation();
+
   return (
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -23,23 +31,21 @@ export default function Hero() {
           <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
 
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" suppressHydrationWarning>
               <h1 className="h1 mb-4" data-aos="fade-up">VenCub</h1>
-              <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Tenemos la solución a
-                todos tus problemas, la familia VenCub te espera, no dejes de contactarnos.</p>
+              <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">{t('header_1')}</p>
               <div className="max-w-3xl mx-auto">
                 <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">
-                  Para más información pónte en contacto con nosotros a través de WhatsApp o una llamada telefónica
+                  {t('header_2')}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-center" data-aos="fade-up"
                      data-aos-delay="200">
                   <a href="https://wa.me/+17272386347"
-                     className="btn text-white bg-green-500 hover:bg-green-700 w-full text-center">WhatsApp</a>
+                     className="btn text-white bg-green-500 hover:bg-green-700 w-full text-center">{t('button_1')}</a>
                   <a href="tel:+17272386347"
-                     className="btn text-white bg-blue-500 hover:bg-blue-700 w-full text-center">LLámanos</a>
+                     className="btn text-white bg-blue-500 hover:bg-blue-700 w-full text-center">{t('button_2')}</a>
                   <a href="https://calendly.com/info-vencub"
-                     className="btn text-white bg-orange-500 hover:bg-orange-700 w-full text-center">Reserva una
-                    cita</a>
+                     className="btn text-white bg-orange-500 hover:bg-orange-700 w-full text-center">{t('button_3')}</a>
                 </div>
               </div>
 

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import MobileMenu from './mobile-menu'
 import Image from 'next/image'
+//import LanguageSwitch from "@/components/ui/language-switcher";
 
 export default function Header() {
     return (
@@ -20,6 +21,7 @@ export default function Header() {
                         </Link>
                     </div>
 
+                    {/*<LanguageSwitch />*/}
                     <MobileMenu />
 
                 </div>

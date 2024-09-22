@@ -1,10 +1,14 @@
+'use client'
+
 import Image from 'next/image'
 
 import FeatImage01 from '@/public/images/features-03-image-01.png'
 import FeatImage02 from '@/public/images/features-03-image-02.png'
 import FeatImage03 from '@/public/images/features-03-image-03.png'
+import {useTranslation} from "react-i18next";
 
 export default function Zigzag() {
+  const { t } = useTranslation();
   return (
       <section>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -12,9 +16,9 @@ export default function Zigzag() {
 
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-              <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Impulsa tu éxito</div>
-              <h1 className="h2 mb-4">Soluciones únicas para tus necesidades</h1>
-              <p className="text-xl text-gray-400">Desde la planificación hasta la ejecución, te ofrecemos un servicio integral para asegurar que cada detalle esté cubierto.</p>
+              <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">{t('green_header')}</div>
+              <h1 className="h2 mb-4">{t('header_title')}</h1>
+              <p className="text-xl text-gray-400">{t('header_subtitle')}</p>
             </div>
 
             {/* Items */}
@@ -29,27 +33,27 @@ export default function Zigzag() {
                 {/* Content */}
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                   <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">Preparación de Taxes</div>
-                    <h3 className="h3 mb-3">Simplificamos la declaración de tus impuestos</h3>
-                    <p className="text-xl text-gray-400 mb-4">En nuestra compañía, nos encargamos de todo el proceso de declaración de impuestos, garantizando que no te pierdas ninguna deducción y maximizando tus beneficios fiscales. Con nosotros, puedes estar seguro de que tus impuestos estarán en las mejores manos.</p>
+                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">{t('point_1')}</div>
+                    <h3 className="h3 mb-3">{t('point_2')}</h3>
+                    <p className="text-xl text-gray-400 mb-4">{t('point_3')}</p>
                     <ul className="text-lg text-gray-400 -mb-2">
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Asesoría personalizada en cada etapa</span>
+                        <span>{t('point_4')}</span>
                       </li>
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Maximización de deducciones</span>
+                        <span>{t('point_5')}</span>
                       </li>
                       <li className="flex items-center">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Proceso fácil y preciso</span>
+                        <span>{t('point_6')}</span>
                       </li>
                     </ul>
                   </div>
@@ -65,27 +69,27 @@ export default function Zigzag() {
                 {/* Content */}
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                   <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">Reparación de Créditos</div>
-                    <h3 className="h3 mb-3">Recupera tu puntaje de crédito con nosotros</h3>
-                    <p className="text-xl text-gray-400 mb-4">Nos especializamos en mejorar tu puntaje de crédito corrigiendo errores en tu informe y negociando con acreedores. Nuestro servicio de reparación de crédito está diseñado para ayudarte a alcanzar una mejor salud financiera, asegurando que tu historial crediticio esté en su mejor forma.</p>
+                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">{t('joint_1')}</div>
+                    <h3 className="h3 mb-3">{t('joint_2')}</h3>
+                    <p className="text-xl text-gray-400 mb-4">{t('joint_3')}</p>
                     <ul className="text-lg text-gray-400 -mb-2">
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Corrección de errores crediticios</span>
+                        <span>{t('joint_4')}</span>
                       </li>
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Negociación con acreedores</span>
+                        <span>{t('joint_5')}</span>
                       </li>
                       <li className="flex items-center">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Mejora continua de tu crédito</span>
+                        <span>{t('joint_6')}</span>
                       </li>
                     </ul>
                   </div>
@@ -101,27 +105,27 @@ export default function Zigzag() {
                 {/* Content */}
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                   <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">Servicios de Notaría</div>
-                    <h3 className="h3 mb-3">Trámites notariales sin complicaciones</h3>
-                    <p className="text-xl text-gray-400 mb-4">Nuestros servicios de notaría cubren todas tus necesidades legales con rapidez y profesionalismo. Ya sea que necesites autenticar documentos, firmar contratos o realizar cualquier otro trámite notarial, te ofrecemos un servicio confiable y eficiente, para que puedas enfocarte en lo que realmente importa.</p>
+                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">{t('koint_1')}</div>
+                    <h3 className="h3 mb-3">{t('koint_2')}</h3>
+                    <p className="text-xl text-gray-400 mb-4">{t('koint_3')}</p>
                     <ul className="text-lg text-gray-400 -mb-2">
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Autenticación rápida de documentos</span>
+                        <span>{t('koint_4')}</span>
                       </li>
                       <li className="flex items-center mb-2">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Trámites notariales a domicilio</span>
+                        <span>{t('koint_5')}</span>
                       </li>
                       <li className="flex items-center">
                         <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                         </svg>
-                        <span>Servicio confiable y profesional</span>
+                        <span>{t('koint_6')}</span>
                       </li>
                     </ul>
                   </div>

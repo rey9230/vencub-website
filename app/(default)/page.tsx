@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Inicio - VenCub',
   description: 'Esta es la página de inicio de la companñía.',
 }
-
+//  ?? "/default-flag.png"
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import Newsletter from '@/components/newsletter'
