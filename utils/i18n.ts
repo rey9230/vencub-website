@@ -26,7 +26,8 @@ i18n
             escapeValue: false,
         },
         backend: {
-            loadPath: 'http://localhost:3000/locales/{{lng}}/translation.json', // Use a full URL
+            //loadPath: 'http://localhost:3000/locales/{{lng}}/translation.json', // Use a full URL
+            loadPath: 'https://www.vencub.com/locales/{{lng}}/translation.json', // Use a full URL
         },
         detection: {
             order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
