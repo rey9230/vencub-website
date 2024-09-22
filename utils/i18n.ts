@@ -8,11 +8,34 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const languageDetector: LanguageDetectorModule = {
     type: 'languageDetector',
     detect: () => {
-        const lang = navigator.language || 'es'; // Fallback to 'en' if no language is detected
-        return lang.split('-')[0]; // Return only the language part
+        // Only execute this in the browser
+        if (typeof window !== 'undefined') {
+            // Check localStorage first
+            const storedLanguage = localStorage.getItem('i18nextLng');
+            if (storedLanguage) {
+                return storedLanguage.split('-')[0]; // Return language part
+            }
+
+            // Check cookies next
+            const cookieLanguage = document.cookie
+                .split('; ')
+                .find(row => row.startsWith('i18next='))
+                ?.split('=')[1];
+            if (cookieLanguage) {
+                return cookieLanguage.split('-')[0]; // Return language part
+            }
+        }
+
+        // Default fallback language
+        return 'en'; // Change this to your default language if necessary
     },
     init: () => {},
-    cacheUserLanguage: () => {},
+    cacheUserLanguage: (language: string) => {
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('i18nextLng', language); // Cache the language in localStorage
+            document.cookie = `i18next=${language}; path=/;`; // Cache the language in cookies
+        }
+    },
 };
 
 i18n
@@ -20,7 +43,7 @@ i18n
     .use(languageDetector)
     .use(initReactI18next)
     .init({
-        fallbackLng: 'es',
+        fallbackLng: 'en',
         debug: true,
         interpolation: {
             escapeValue: false,
