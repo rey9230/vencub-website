@@ -44,7 +44,7 @@ export default function Hero() {
                      className="btn text-white bg-green-500 hover:bg-green-700 w-full text-center">{t('button_1')}</a>
                   <a href="tel:+17272386347"
                      className="btn text-white bg-blue-500 hover:bg-blue-700 w-full text-center">{t('button_2')}</a>
-                  <a href="https://calendly.com/info-vencub"
+                  <a href="https://vencubmultiservices.setmore.com/lorayne"
                      className="btn text-white bg-orange-500 hover:bg-orange-700 w-full text-center">{t('button_3')}</a>
                 </div>
               </div>
